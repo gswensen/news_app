@@ -1,6 +1,6 @@
 .App {
   display: grid;
-  grid-template: 50px 1fr / 100vw;
+  grid-template: 50px 50PX / 100vw;
   text-align: center;
   width: 100%;
   height: 100vh;
@@ -9,30 +9,53 @@
 .main_header_container {
   background-color: slategray;
   width: 100%;
-  height: 80px;
+  height: 50px;
   display: grid;
-  
   color: goldenrod;
   font-size: 25px;
   align-content: center;
 }
 .article_view_container {
   background-color: slategray;
-  
   height: 100%;
-  
-  padding: 20px;
+  padding: 10px;
 }
 .article {
-  text-align: justify;
+  text-align: left;
   font-size: 16px;
+  overflow-wrap: break-word;
   background-color: white;;
   padding: 5px;
   border: solid;
   border-color: black;
   border-radius: 5px;
-
 }
 .space {
-  height: 20px;
+  height: 10px;
+}
+.search_container {
+  background-color: slategray;
+  display: grid;
+  grid-area: 2 / 1 / span 1 / span 1;
+  grid-template: 1fr / 75% 25%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.search_button {
+  display: grid;
+  height: 30px;
+  width: 60px;
+  align-self: center;
+  margin: auto;
+ 
+  
+}
+.search_input {
+  display: grid;
+  height: 30px;
+  width: 100%;
+  border: solid;
+  border-color: black;
+  border-radius: 2px;
+  box-sizing: border-box;
 }

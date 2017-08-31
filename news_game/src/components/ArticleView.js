@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 
 class ArticleView extends Component {
-    render() {
+    render(props) {
         return (
             <div>
                 <section className='article_view_container'>
@@ -10,7 +10,7 @@ class ArticleView extends Component {
                         this.props.articles.map((item)=> {
                             return (
                                 <div>
-                                    <div className='article'>{item}</div>
+                                    <div className='article'>{Object.values(item)}</div>
                                     <div className='space'></div>
                                 </div>
                             )
