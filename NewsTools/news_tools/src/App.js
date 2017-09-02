@@ -26,13 +26,15 @@ class App extends Component {
 
   render() {
     return (
+      <div className='main_parent'>
       <div className="AppBackground">
+      </div>
         <div className='App'>
         <MainHeader/>
         <SearchBar/>
         <ArticleView className='article_view_container'/>
         </div>
-      </div>
+        </div>
     );
   }
 }

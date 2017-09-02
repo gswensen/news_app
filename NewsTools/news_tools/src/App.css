@@ -1,20 +1,28 @@
-@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text|Open+Sans|Playfair+Display');
 .AppBackground {
-  background-image: url('https://saylordotorg.github.io/text_understanding-media-and-culture-an-introduction-to-mass-communication/section_04/88a95019339bf16c3ac87f23abc801b5.jpg');
+  background-image: url('https://fthmb.tqn.com/72dyV1MTtxpT1D4VkfEJrgTUxBQ=/2608x1863/filters:fill(auto,1)/about/GettyImages-169808021-573d20255f9b58723d8e4672.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100%;
+  height: calc(100% + 185px);
   background-attachment: fixed;
+  filter: invert(100%);
+  position: absolute;
+  
 }
-
+.main_parent {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
 .App {
-  min-height: 100vh;
+  
   display: grid;
-  grid-template: 100px 90px 100% 50px/ 100%;
+  grid-template: 100px 85px 100% / 100%;
   text-align: center;
   width: 100%;
   height: 100%;
+  position: absolute;
 }
 
 .main_header_container {
@@ -23,11 +31,12 @@
   width: 100%;
   height: 100px;
   display: grid;
-  color: black;
+  color: #FFFFFF;
   font-size: 70px;
   align-self: center;
   align-content: center;
   font-family: 'Libre Barcode 128 Text', cursive;
+  padding-top: 5px;
 }
 .article_view_container {
   /* background-color: slategray; */
@@ -38,34 +47,40 @@
   padding: 10px;
   padding-right: 0px;
   box-sizing: border-box;
-
+  color: white;
+  padding-top: 0px;
 }
 
 
 .article {
   
   text-align: left;
-  font-size: 16px;
+  font-size: 14px;
   overflow-wrap: break-word;
-  background-color: #CCC6AD;
-  padding: 7px;
+  background-color: #2A2929;
+  padding: 16px;
   border: solid;
-  border-color: #CCC6AD;
-  border-radius: 5px;
-  filter: blur(4px);
+  opacity: .94;
+  border-color: #2F1EE3;
+  border-radius: 2px;
+  /* filter: blur(3px); */
   margin-bottom: 5px;
-  margin-right: 5px;
+  margin-right: 10px;
+  font-family: 'Playfair Display';
+  font-size: 26px;
+  outline: 1px solid;
+  outline-offset: -10px;
   
 }
 @media(min-width: 1024px) {
   .article_view_container {
-    grid-template: 1fr / 1fr 1fr 1fr;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
   }
   .article {
     box-sizing: border-box;
     display: grid;
     height: 99%;
-    max-width: 33vw;
+    max-width: 100%;
   }
 }
 .search_container {
@@ -78,6 +93,8 @@
   padding: 10px;
   box-sizing: border-box;
   padding-bottom: 0px;
+  padding-top: 0px;
+  margin-bottom: 0px;
 }
 .search_button {
   display: grid;
@@ -86,26 +103,30 @@
   max-width: 100px;
   align-self: center;
   margin: auto;
-  font-family: 'Open Sans', 'Sans';
+  font-family: 'Playfair Display', 'Sans';
   border: solid;
-  border-color: black;
-  border-radius: 1px;
-  box-sizing: border-box;
-  
- 
-  
+  border-color: #FFFFFF;
+  /* font-weight: bold; */
+  border-radius: 2px;
+  box-sizing: border-box; 
+  background-color: #2A2929;
+  color: white;
+}
+.space {
+  height: 10px;
 }
 .search_input {
   display: grid;
-  height: 30px;
+  height: 30px; 
   max-width: 150px;
   font-family: 'Open Sans', 'Sans';
   border: solid;
-  border-color: black;
+  border-color: white;
   border-radius: 1px;
   box-sizing: border-box;
   box-sizing: border-box;
   align-self: center;
   margin: auto;
   margin-bottom: 10px;
+  background-color: #FFFFFF;
 }

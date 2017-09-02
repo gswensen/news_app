@@ -29,8 +29,12 @@ class ArticleView extends Component {
                         this.state.articles.map(function(item){
                             return (
                                 <div>
-                                        <div className='article'>{item}</div>
-                                        
+                                        <div className='article'>{item}
+                                               
+                                        </div>
+                                        <div className='space'>
+                                        </div> 
+                                    
                                 </div>    
                             )
                         })
