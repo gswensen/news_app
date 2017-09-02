@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text|Open+Sans');
+.AppBackground {
+  background-image: url('https://saylordotorg.github.io/text_understanding-media-and-culture-an-introduction-to-mass-communication/section_04/88a95019339bf16c3ac87f23abc801b5.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+}
+
+.App {
+  min-height: 100vh;
+  display: grid;
+  grid-template: 100px 90px 100% 50px/ 100%;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.main_header_container {
+  /* background-color: slategray; */
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  display: grid;
+  color: black;
+  font-size: 70px;
+  align-self: center;
+  align-content: center;
+  font-family: 'Libre Barcode 128 Text', cursive;
+}
+.article_view_container {
+  /* background-color: slategray; */
+  grid-area: 3 / 1 / span 1 / span 1;
+  height: 100%;
+  display: grid;
+  grid-template: 1fr / 1fr;
+  padding: 10px;
+  padding-right: 0px;
+  box-sizing: border-box;
+
+}
+
+
+.article {
+  
+  text-align: left;
+  font-size: 16px;
+  overflow-wrap: break-word;
+  background-color: #CCC6AD;
+  padding: 7px;
+  border: solid;
+  border-color: #CCC6AD;
+  border-radius: 5px;
+  filter: blur(4px);
+  margin-bottom: 5px;
+  margin-right: 5px;
+  
+}
+@media(min-width: 1024px) {
+  .article_view_container {
+    grid-template: 1fr / 1fr 1fr 1fr;
+  }
+  .article {
+    box-sizing: border-box;
+    display: grid;
+    height: 99%;
+    max-width: 33vw;
+  }
+}
+.search_container {
+  /* background-color: slategray; */
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  grid-template: 1fr 50% / 1fr;
+  padding: 10px;
+  box-sizing: border-box;
+  padding-bottom: 0px;
+}
+.search_button {
+  display: grid;
+  height: 30px;
+  width: 100%;
+  max-width: 100px;
+  align-self: center;
+  margin: auto;
+  font-family: 'Open Sans', 'Sans';
+  border: solid;
+  border-color: black;
+  border-radius: 1px;
+  box-sizing: border-box;
+  
+ 
+  
+}
+.search_input {
+  display: grid;
+  height: 30px;
+  max-width: 150px;
+  font-family: 'Open Sans', 'Sans';
+  border: solid;
+  border-color: black;
+  border-radius: 1px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  align-self: center;
+  margin: auto;
+  margin-bottom: 10px;
+}
